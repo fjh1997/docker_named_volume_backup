@@ -6,9 +6,11 @@ sudo docker volume ls
 ```
 backup
 ```bash
-sudo backup_docker_volume.sh <volumn_name> <tar_file>
+#sudo backup_docker_volume.sh <volumn_name> <tar_file>
+sudo backup_docker_volume.sh codimd_database-data backup1.tar
 ```
 restore
 ```
-sudo restore_docker_volume.sh <volumn_name> <tar_file>
+#sudo restore_docker_volume.sh <volumn_name> <tar_file>
+sudo restore_docker_volume.sh codimd_database-data backup1.tar
 ```
